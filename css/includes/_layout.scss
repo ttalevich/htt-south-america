@@ -1,0 +1,317 @@
+.full-width {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: initial;
+}
+
+
+// Nav
+header {
+	z-index:1000;
+	position:fixed;
+	width:100%;
+	height:100px;
+	transition:.3s ease;
+	display:block;
+	clear:both;
+}
+
+.header-scroll {
+	height:50px;
+	background:#eee;
+	box-shadow:0 4px 20px rgba(0,0,0,0.3);
+	display:block;
+	
+}
+
+.nav-wrapper {
+	width:100%;
+	text-align: center;
+	display: block;
+}
+
+nav {
+	height:60px;
+	text-align: center;
+	width:80%;
+	
+	
+	ul {
+		margin: 0 auto;
+		line-height:60px;
+		display:block;
+		
+			li {
+			display:block;
+			float:left;
+			margin-left:10%;
+			position: relative;
+
+				ul {
+					display: none;
+					
+					&:hover {
+						display:block;
+						background:#fafafa;
+						top:0;
+						padding:1em;
+						line-height:1.1em;
+						position: absolute;
+					}
+
+				}
+
+				&:first-child {
+					margin-left:0;
+
+				}
+
+			a {
+				font-family:$base-heading-font;
+				color:$heading-color;
+
+				&:hover {
+					transition: .4s ease;
+				}
+
+			}
+
+		}
+
+	}
+	
+}
+
+
+// Check buttons
+
+input#english {
+	position: absolute;
+	display:block;
+	top:5px;
+	width:40px;
+}
+
+input#espanol {
+	position: absolute;
+	display:block;
+	top:30px;
+	width:40px;
+}
+
+title[for="english"] + input#english{
+	position: absolute;
+	
+}
+
+input[type="radio"].language-toggle {
+	opacity:1;
+}
+
+.language-toggle {
+	a {
+		color:$text-color;
+		font-size:.8rem;
+	}
+	a.active {
+		color:$brand-color;
+	}
+}
+
+// Home page layout
+// CHANGE BACKGROUND LINKS ON DEPLOYMENT and in _config.yml
+.block-1 {
+	display: block;
+	width:100%;
+	height:590px;
+	background-image: url(../../img/banner.jpg); 
+	background-size: cover;
+	overflow: auto;
+	span {
+		width:65%;
+		display: inline-block;
+		vertical-align: middle;
+		position: absolute;
+		left:20%;
+		right:20%;
+		top:30%;
+		bottom:20%;
+		
+		h2 {
+			color:#fafafa;
+		}
+		p {
+			color:#fafafa;
+		}
+		a {
+			position: absolute;
+			right:60px;
+			margin-top:10px;
+		}
+	
+	}
+	
+	.block-1-cta {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
+.block-2 {
+	height:550px;
+	background-image: url(../../img/rect-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.offset {
+	background: darken(#fafafa, 4%);
+	width:100%;
+}
+
+.block-wrapper {
+	max-width:1000px;
+	margin: 0 auto;
+}
+
+.block-text {
+
+	h2 {
+		margin-top:30px;
+	}
+	h3 {
+		margin-top: 60px;
+	}
+	a.rounded-button {
+		float:right;
+		clear: both;
+		margin-bottom:10px;
+	}
+}
+
+.block-4 {
+	height:400px;
+	background-image: url(../../img/rect-3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.block-5 {
+	width:100%;
+	height:450px;
+	background:$brand-color;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color:#fafafa;
+	p {color:#fafafa; width:50%; margin:0 auto;}
+}
+
+.block-5 > .centered {
+	width:80%;
+	margin: 0 auto;
+}
+
+a.rounded-button-clear {
+	border:#fafafa 1px solid;
+	color:#fafafa;
+	padding:10px 20px;
+	border-radius:30px; 
+	display:block;
+	width:150px;
+	margin:30px auto 0 auto;
+	background:rgba(0,0,0,0.0);
+	transition: .3s ease;
+	&:hover {
+		transition: .3s ease;
+		background: white;
+		color:$text-color;
+	}
+	
+}
+	
+a.rounded-button {
+	display: block;
+	
+	button {
+		color:#fafafa;
+		padding:10px 20px;
+		border-radius:30px;
+		display:block;
+		background:$brand-color;
+		transition: .3s ease;
+
+		&:hover {
+			transition: .3s ease;
+			background:darken($brand-color, 30%);
+		}
+
+	}
+
+}
+
+
+// Footer 
+.footer-wrap {
+	background:$brand-color;
+	padding:30px;
+	
+	.footer-contact {
+		color:#fafafa;
+		li {
+			list-style: none;
+		}
+		
+		p, a { color:#fafafa; }
+	}
+	
+	.footer-nav {
+
+		li {
+			list-style: none;
+			color:#fafafa;
+			display:block;
+			float:left;
+			margin-left: 5%;
+			font-weight:bold;
+			ul > li {
+				display:inline;
+				clear: both;
+				font-weight: 200;
+				margin-left: -10px;
+				margin-top:4px;
+				border-left:1px #fafafa solid;
+				padding-left:4px;
+		
+				a {
+					font-size: .8em;
+				}
+				
+			}
+			
+			a { 
+				text-decoration: none; 
+				color:#fafafa;
+				transition: .2s ease;
+				&:hover {
+					color:$text-color;
+					transition: .2s ease;
+				}
+				
+			}
+		
+		}
+	
+	}
+	
+}
+
+.footer-logo {
+	display:block;
+	margin:0 auto;
+	padding-top:30px;
+	clear:both;
+	
+}

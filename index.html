@@ -1,23 +1,55 @@
 ---
-layout: default
+layout: home
+title: {{ site.title }}
+description: {{ site.description }}
 ---
+<div class="row full-width">
+	<div class="block-1">
+		<span class="block-1-cta">
+			<h2>Build the future with Hi-Tech Tilt</h2>
+			<p>Hi-Tech Tilt™ is the result of years of innovative building and integration of commonly used products with the application of new and improved techniques by Smart Management Company.</p>
+			<a href="#" class="rounded-button"><button>Technical</button></a>
+		</span>
+	</div>
+</div>
 
-<div class="home">
+<div class="row full-width offset">
+	<div class="block-wrapper">
+		<div class="hide-for-small-only medium-7 columns block-2">
+			{% include home-svg.html %}
+		</div>
+		<div class="small-12 medium-5 columns block-text">
+			<h2>Advantages</h2>
+				<ul class="home-list">
+					<li>Aprox. 70% less concrete used</li>
+					<li>Easy installation and insulation</li>
+					<li>Up to 40% faster erection time</li>
+					<li>Reduction in finishing labor costs</li>
+					<li>Panels may be erected after 48 hours after pouring concrete</li>
+				</ul>
+			<h3>Engineer Recommended</h3>
+			<blockquote>“ I am very experienced and knowledgeable in tilt wall design and construction, having engineered over forty tilt wall buildings over a period of twenty-five years, and I believe that this system is superior in several ways…” <strong>John Larkin Wilson</strong></blockquote>
+		</div>
+	</div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="row onset">
+	<div class="small-12 medium-5 columns block-text">
+		<h2>Hi-Tech Tilt in Action</h2>
+		<p>Don't take our word for it - Hi-Tech Tilt has been licensed to many commercial, residential, and public projects with outstanding benefits.</p>
+		<p><strong>Watch:</strong> Time lapse video of Hi-Tech Tilt wall panels being built and erected for Cargill Building <em>in less that one month.</em></p>
+	</div>
+	<div class="small-0 medium-7 columns block-4">
+		<iframe src="https://www.youtube.com/embed/UHi_ul1hJCQ" frameborder="0" muted allowfullscreen></iframe>
+	</div>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="row full-width">
+	<div class="small-12 columns block-5 small-centered">
+		<div class="centered">
+			<h2>License with us</h2>
+			<p>There's a reason Hi-Tech Tilt is used in so many applications. To name a few: build time, cost reductions, superior construction when compared to concrete blocks. Click below to read our licensing benefits!</p>
+			<a href="#" class="rounded-button-clear"><button>Licensing</button></a>
+		</div>
+	</div>
 </div>

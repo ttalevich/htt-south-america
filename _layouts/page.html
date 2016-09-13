@@ -1,0 +1,16 @@
+{% include head.html %}
+{% include header.html %}
+
+<div class="row page-content">
+
+	<div class="columns small-12 medium-8">
+		{{ content }}
+	</div>
+
+	<div class="columns small-12 medium-4 sidebar">
+		{% contentblock sidebar %}
+	</div>
+
+</div>
+
+{% include footer.html %}

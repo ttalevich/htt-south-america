@@ -1,0 +1,29 @@
+// Page layout
+.page-content {
+	margin-top:160px;
+}
+
+.sidebar {
+	
+	ul {
+		li {
+			list-style: none;
+			margin-bottom: 8px;
+			a {
+				color: #fafafa;
+				font-size:1.1rem;
+				font-weight: 600;
+				background:$brand-color;
+				border-radius: 450px;
+				padding:4px 16px;				
+				transition: .3s ease;
+				
+				&:hover {
+					transition: .3s ease;
+					background:$red;
+				}
+			}
+		}
+	}
+	
+}
