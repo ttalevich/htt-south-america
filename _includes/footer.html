@@ -12,28 +12,12 @@
 		</div>
 		<div class="columns medium-7 footer-nav">
 			<ul>
-				<li>
-					<a href="#">About</a>
-					<ul>
-						<li><a href="#">Placeholder</a></li>
-						<li><a href="#">Placeholder</a></li>
-						<li><a href="#">Placeholder</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Information</a></li>
-				<li>
-					<a href="">Opportunities</a>
-					<ul>
-						<li><a href="">Placeholder</a></li>
-						<li><a href="">Placeholder</a></li>
-					</ul>
-				</li>
-				<li><a href="">Contact</a></li>
+				{% include nav-list.html %}
 			</ul>
 		</div>
 		<div class="row full-width">
 			<div class="small-12 columns small-centered">
-				<img class="footer-logo" src="{{site.url}}/img/footer-logo.png" alt="HTT Logo">
+				<a href="http://hi-techtilt.com/" target="_blank"><img class="footer-logo" src="{{site.url}}/img/footer-logo.png" alt="HTT Logo"></a>
 			</div>
 		</div>
 	</footer>

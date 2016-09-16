@@ -18,12 +18,13 @@ $(document).ready(function () {
 
 		if ($(this).scrollTop() > offset) {
 			$('#header').addClass('header-scroll');
-		} else if ($(this).scrollTop() > page) {
+		} else if ($(this).scrollTop() > 40) {
 			$('#header').addClass('header-scroll');
 		} else {
 			$('#header').removeClass('header-scroll');
 		}
 
 	});
-
+	
 });
+

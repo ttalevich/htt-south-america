@@ -29,6 +29,7 @@ nav {
 	width: 800px;
 	margin: 0 auto;
 	display: block;
+	list-style: none;
 	ul {
 		margin-top: 35px;
 		line-height: 60px;
@@ -56,27 +57,48 @@ nav {
 			position: relative;
 			width:90px;
 			position: relative;
+			transition: .3s ease;
+			&:before {
+				content: '';
+			}
+			
 			ul {
 				display:none;
+				transition: .3s ease;
+				opacity:0;
 			}
 			
 			&:hover {
 				ul {
-					display:inline;
-					background:#eee;
+					display:block;
+					background:#fafafa;
 					z-index: 1001;
 					clear:both;
 					min-width:100%;
 					position: absolute;
 					width:130px;
-					top:5px;
-					left:0;
+					top:20px;
+					left:-15px;
+					transition: .3s ease;
+					opacity:1;
 					li {
-						display:block;
-						width:100%;
-						left:0;
+						text-align: center;
+						width:100%;					
+						&:before {
+							content:'›';
+							color:$red;
+							position: absolute;
+							left:0px;
+							font-size: 1.2em;
+							transition: .3s ease;
+						
+						}
 						&:hover {
-							background:darken(#eee, 2%);
+							&:before {
+								left:10px;
+							}
+							//background:darken(#eee, 2%);
+							transform: scale(1.1);
 						}
 					}
 				}
@@ -95,7 +117,7 @@ nav {
 
 .header-scroll {
 	height: 50px;
-	background: #eee;
+	background: #fafafa;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 	display: block;
 	nav {
@@ -107,7 +129,6 @@ nav {
 			li:hover ul {
 				position: absolute;
 				top:50px;
-				left:0;
 			}
 		}
 	}
@@ -228,18 +249,6 @@ input[type="radio"].language-toggle {
 	}
 }
 
-ul.home-list {
-	li {
-		list-style: none;
-		font-size:1em;
-		&:before {
-			content: '•'; 
-			
-			color:$red;
-			padding-right:6px;
-		}
-	}
-}
 
 .block-4 {
 	height: 400px;
@@ -308,7 +317,7 @@ a.rounded-button {
 }
 
 // Footer 
-.footer-bg { background: $brand-color;}
+.footer-bg { background: $brand-color; }
 .footer-wrap {
 	background: $brand-color;
 	padding: 30px;
@@ -347,7 +356,7 @@ a.rounded-button {
 				color: #fafafa;
 				transition: .2s ease;
 				&:hover {
-					color: $text-color;
+					color: $red;
 					transition: .2s ease;
 				}
 			}

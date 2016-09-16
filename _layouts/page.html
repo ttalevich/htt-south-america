@@ -1,7 +1,21 @@
 {% include head.html %}
 {% include header.html %}
 
-<div class="row page-content">
+{% if page.banner != nil %}
+<div class="banner-img row">
+	<div class="small-12 columns ">
+		<img src="{{ page.banner }}" draggable="false">
+	</div>
+</div>
+{% endif %}
+
+<div class="row 
+	{% if page.banner != nil %}
+		has-banner
+	{% elsif page.banner == nil %}
+		page-content
+	{% endif %} 
+	">
 
 	<div class="columns small-12 medium-8">
 		{{ content }}
