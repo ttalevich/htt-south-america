@@ -26,5 +26,18 @@ $(document).ready(function () {
 
 	});
 	
+	// lightGallery
+		$(".lightgallery").lightGallery({
+				mode: 'lg-fade',
+				cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)'
+		}); 
+
+	
+	// toggle menu
+	$('a.menu').click(function(){
+		$(this).children('span').toggleClass('checked');
+		$('ul.nav-items').toggleClass('show-nav');
+	});
+	
 });
 

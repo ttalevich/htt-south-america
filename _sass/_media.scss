@@ -1,0 +1,80 @@
+	// Media Queries
+	@media screen and (max-width: 770px) {
+		.desktop-nav {
+			display: none;
+		}
+		.mobile-nav {
+			display: block;
+			background: #fafafa;
+			position: relative;
+			a.menu {
+				display: block;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				right: 15px;
+				top: 25px;
+				cursor: pointer;
+				transition: .3s ease;
+				.hamburger {
+					content: '';
+					// display: block;
+					width: 40px;
+					height: 1px;
+					background: #4A4A4A;
+					position: absolute;
+					right: 0px;
+					top: 0px;
+					transition: .3s ease;
+					&:before {
+						content: '';
+						position: absolute;
+						display: block;
+						width: 40px;
+						height: 1px;
+						background: #4A4A4A;
+						right: 0px;
+						top: 5px;
+						transition: .3s ease;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						display: block;
+						width: 40px;
+						height: 1px;
+						background: #4A4A4A;
+						right: 0px;
+						top: 10px;
+					}
+				}
+				.checked {
+					background: $red;
+					transition: .3s ease;
+					display:block;
+					&:before {
+						background: $red;
+						right:5px;
+						transition: .3s ease;
+
+					}
+					&:after {
+						background: $red;
+						transition: .3s ease;
+					}
+				}
+			}
+			a {
+				width: 30px;
+				svg.logo {
+					display: block;
+					width: 40px;
+					left: 5px;
+					top: 5px;
+				}
+			}
+			ul {
+				display: none;
+			}
+		}
+	}

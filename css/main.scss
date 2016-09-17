@@ -3,7 +3,7 @@
 ---
 @charset "utf-8";
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,600';
-bdoy, html {height:100%; width:100%; margin:0; padding:0;}
+body, html {height:100%; width:100%; margin:0; padding:0;}
 // Our variables
 $base-font-family: 'Open Sans', sans-serif;
 $base-heading-font: 'Open Sans', sans-serif;
@@ -44,7 +44,10 @@ $on-laptop:        1000px;
 //     }
 // }
 
-// Import partials from the `minima` theme.
+// Import 
 @import 'type';
 @import 'layout';
 @import 'page-layout';
+@import 'lg-transitions';
+@import 'lightgallery';
+@import 'media';
