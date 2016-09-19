@@ -36,7 +36,7 @@ $(document).ready(function () {
 	// toggle menu
 	$('a.menu').click(function(){
 		$(this).children('span').toggleClass('checked');
-		$('ul.nav-items').toggleClass('show-nav');
+		$('.nav-items').toggleClass('show-nav');						
 	});
 	
 });
