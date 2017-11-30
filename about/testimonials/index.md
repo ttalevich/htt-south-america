@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Testimonials | {{ site.baseurl }} | {{ site.title }}
-permalink: /about/testimonials/
 description: '"I wanted to drop you a note to express our gratitude for the excellent support that your people provided to Woodland Construction with our first Hi-Tech Tilt project." - Woodland Construction Co.'
 ---
 

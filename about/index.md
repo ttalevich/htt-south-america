@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About | {{ site.title }}
-permalink: /about/
 description: Hi-Tech Tilt™ has the support of several structural engineers who establish the stability and structural integrity of our product. This factor allows for quick approval by building officials throughout.
 banner: banner-2.jpg
 ---

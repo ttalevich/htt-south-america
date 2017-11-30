@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Saving with Hi-Tech Tilt | {{ site.title }}
-permalink: /info/savings/
 description: Hi-Tech Tilt is the difference when constructing a solid building. A patented versatile composite system, Hi-Tech Tilt™ provides enormous savings and advantages over conventional tilt-up wall systems.
 ---
 
@@ -29,6 +28,6 @@ In addition to the MR-24 roof we have added a revolutionary radiant barrier that
 {% contentfor sidebar %}
 
 * [Information]({{ site.url }}/info/)
-* [Projects]({{ site.url }}/info/projects/index.html)
+* [Projects]({{ site.url }}/info/gallery/index.html)
 
 {% endcontentfor %}

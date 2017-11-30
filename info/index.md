@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Techinical Information | {{ site.title }}
-permalink: /info/
 description: Hi-Tech Tilt™ has the support of several structural engineers who establish the stability and structural integrity of our product. This factor allows for quick approval by building officials throughout.
 banner: img/banner-info.jpg
 ---
@@ -20,6 +19,6 @@ This patented technology forms construction panels stronger-but-lighter than sol
 {% contentfor sidebar %}
 
 * [Savings]({{ site.url }}/info/savings/index.html)
-* [Projects]({{ site.url }}/info/media/index.html)
+* [Projects]({{ site.url }}/info/gallery/index.html)
 
 {% endcontentfor %}
